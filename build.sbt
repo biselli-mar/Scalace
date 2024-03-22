@@ -1,10 +1,12 @@
 import Dependencies._
 
-ThisBuild / scalaVersion     := scala3Version
-ThisBuild / version          := "0.1.0-SNAPSHOT"
-
-lazy val root = (project in file("."))
+lazy val root = project
+  .in(file("."))
   .settings(
-    name := "Scalace",
+    name := "scalace",
+    version := "0.1.0-SNAPSHOT",
+
+    scalaVersion := scala3Version,
+
     libraryDependencies += commonDependencies
   )
