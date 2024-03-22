@@ -1,4 +1,4 @@
-@main def hello(): Unit =
+@main def scalace(): Unit =
   println("Hello world!")
   println(msg)
 

@@ -1,4 +1,11 @@
-import Dependencies._
+val scala3Version = "3.4.0"
+
+val scalactic = "org.scalactic" %% "scalactic" % "3.2.18"
+val scalatest = "org.scalatest" %% "scalatest" % "3.2.18" % "test"
+val commonDependencies = Seq(
+    scalactic,
+    scalatest
+)
 
 lazy val root = project
   .in(file("."))
@@ -8,5 +15,5 @@ lazy val root = project
 
     scalaVersion := scala3Version,
 
-    libraryDependencies += commonDependencies
+    libraryDependencies ++= commonDependencies
   )
