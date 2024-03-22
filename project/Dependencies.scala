@@ -1,5 +1,15 @@
 import sbt._
+import Keys._
+
 
 object Dependencies {
-  lazy val munit = "org.scalameta" %% "munit" % "0.7.29"
+    val scala3Version = "3.2.2"
+
+    val scalactic = "org.scalactic" %% "scalactic" % "3.2.10"
+    val scalatest = "org.scalatest" %% "scalatest" % "3.2.10" % "test"
+
+    val commonDependencies = Seq(
+        scalactic,
+        scalatest
+    )
 }
