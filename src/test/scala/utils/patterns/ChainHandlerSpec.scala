@@ -1,4 +1,4 @@
-package util
+package utils
 package patterns
 
 import org.scalatest.wordspec.AnyWordSpec
