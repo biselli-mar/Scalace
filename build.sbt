@@ -1,4 +1,4 @@
-val scala3Version = "3.4.0"
+val scala3Version = "3.3.1"
 
 val scalactic = "org.scalactic" %% "scalactic" % "3.2.18"
 val scalatest = "org.scalatest" %% "scalatest" % "3.2.18" % "test"
