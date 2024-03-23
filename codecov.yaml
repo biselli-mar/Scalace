@@ -1,5 +1,6 @@
 ignore:
   - "**/Scalace.scala"
+  - "**/**.T.scala"
 
 coverage:
   status:
