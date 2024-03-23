@@ -1,0 +1,8 @@
+ignore:
+  - "**/Scalace.scala"
+
+coverage:
+  status:
+    patch:
+      default:
+        target: 100%
