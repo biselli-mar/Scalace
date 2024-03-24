@@ -9,8 +9,6 @@ import cardComponent.Card
 case class CardImpl(override val suit: Suit, override val rank: Rank) extends Card(suit, rank):
     def canBePlacedOn(other: Card): Boolean = 
         if (this.isJoker) true
-        else if (other.isJoker && this.rank == Rank.Ace) true
-        else if (other.isJoker) false
         else if (other.value <= this.value) true
         else false
 
